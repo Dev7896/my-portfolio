@@ -29,6 +29,27 @@ img.first-image {
   gap: 1em;
 }
 
+.animated-text {
+  display: inline-block;
+  animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   .section1 {
     display: flex;
