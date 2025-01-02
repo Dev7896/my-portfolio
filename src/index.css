@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body,
+#root {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  scroll-behavior: smooth;
+}
+:root {
+  --body-padding: 10%;
+  --secondary-color: #3333336e;
+  --regular-radius: 2em;
+}
+.none {
+  display: none;
+}
+main, footer {
+  padding: 0px var(--body-padding);
+  margin-top: 5em;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: 1px solid black;
+  border-radius: var(--regular-radius);
+  padding: 12px 22px;
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.bold {
+  color: black !important ;
+  font-weight: 500;
+}
+
+.regular-text {
+  color: var(--secondary-color);
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+.heading {
+  font-size: 3em;
+  text-transform: capitalize;
+  font-family: "Roboto";
+}
+.flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.gap-1 {
+  gap: 1em;
+}
+.box {
+  padding: 1em ;
+  border: 1px solid black;
+  border-radius: var(--regular-radius);
+}
+.box a{
+  text-decoration: none;
+  /* color: black; */
+}
+ .btn-group {
+display: flex;
+justify-content: space-around;
+}
+.box img {
+  width:auto ;
+  height: 200px;
+  object-fit: contain;
+}
+@media only screen and (max-width : 768px ){
+  .mobile-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}

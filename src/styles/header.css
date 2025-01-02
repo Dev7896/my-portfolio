@@ -1,0 +1,91 @@
+header  {
+  padding: 1em var(--body-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .desktop {
+  /* margin: 0px auto; */
+  height: 100%;
+}
+.logo {
+  font-size: xx-large;
+  font-family: "Pacifico", cursive;
+  text-transform: capitalize;
+}
+.desktop ul {
+  display: flex;
+  list-style: none;
+  flex-flow: row nowrap;
+  gap: 2em;
+  /* align-items: center; */
+}
+.desktop ul li {
+  text-transform: capitalize;
+  font-size: x-large;
+}
+.desktop ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.desktop ul li:hover {
+  border-bottom: 1px solid var(--secondary-color);
+}
+.desktop ul li a:hover {
+  color: #3333336e;
+  cursor: pointer;
+}
+.slidlist {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  list-style: none;
+  transition: width 1s ease-in-out;
+
+}
+
+.slidlist li {
+    text-transform: capitalize;
+    font-size: x-large;
+    margin-top: 2em;
+    
+}
+.slidlist li a{
+    color: black;
+    text-decoration: none;
+}
+.slidlist li a:hover{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+.mobile {
+  width: auto;
+  color: black;
+
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slidlist {
+    border: 1px solid var(--secondary-color);
+    background-color: white;
+    width: 50vw;
+  }
+}

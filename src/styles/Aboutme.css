@@ -1,0 +1,45 @@
+.aboutme {
+  margin-top: 5rem;
+}
+.aboutme-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+.aboutme-wrapper img {
+  width: 400px;
+  height: 450px;
+  border-radius: var(--regular-radius);
+}
+.knowledge-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 0.4em;
+  border: 1px solid black;
+  padding: 16px 20px;
+  border-radius: var(--regular-radius);
+}
+.knowledge-wrapper-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+@media only screen and (max-width: 768px) {
+  .aboutme-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutme-wrapper img {
+    width: auto;
+    height: 45vh;
+  }
+  .knowledge-wrapper-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
