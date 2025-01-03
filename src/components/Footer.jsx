@@ -15,7 +15,7 @@ export default function Footer() {
         <span className="regular-text">Rahul Acharya </span>
         </div>
       </div>
-      <p className="text-center">Copyright © 2023 All Rights Reserved.</p>
+      <p className="text-center">Copyright © 2025 All Rights Reserved.</p>
       <p style={{fontSize: '1.25em'}} className="bold text-center">Made with <i class="ri-heart-fill "></i> by Rahul Acharya</p>
     </footer>
   );
